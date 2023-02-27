@@ -1,0 +1,23 @@
+
+
+/* .thediv{
+
+} */
+
+.top{
+    /* background-color: lightskyblue;
+    border: black solid 1px;
+    border-top-left-radius:20px ;
+    border-bottom-right-radius: 20px; */
+    width: 49%;
+    float: left;
+    border: black solid;
+    
+}
+
+.top-2{
+    width: 49%;
+    float: right;
+    border: black solid;
+    
+}

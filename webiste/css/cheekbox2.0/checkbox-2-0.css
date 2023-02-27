@@ -1,0 +1,80 @@
+.s2-ckb1{
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.main {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+  
+/* Creating a custom checkbox
+based on demand */
+.s2-ckb1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+}
+  
+/* Specify the background color to be
+shown when hovering over checkbox */
+.main:hover input ~ .s2-ckb1 {
+    background-color: rgb(62, 62, 62);
+}
+  
+/* Specify the background color to be
+shown when checkbox is active */
+.main input:active ~ .s2-ckb1 {
+    background-color: red;
+}
+  
+/* Specify the background color to be
+shown when checkbox is checked */
+.main input:checked ~ .s2-ckb1 {
+    background-color: green;
+}
+  
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.s2-ckb1:after {
+    content: "";
+    position: absolute;
+    
+}
+  
+/* Display checkmark when checked */
+.main input:checked ~ .s2-ckb1:after {
+    display: block;
+}
+  
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.main .s2-ckb1:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

@@ -1,0 +1,29 @@
+.product-3{
+    display: flex;
+    /* justify-content: left; */
+    border: solid black;
+    border-radius: 20px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.product-3-text.p{
+    text-align: center;
+}
+
+
+
+.img3-1{
+    /* border: solid 2px black;  */
+    width: 250px;
+    height: 165px;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius:20px ;
+}
+
+
